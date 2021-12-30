@@ -1,0 +1,102 @@
+#e {
+    display: none;
+}
+
+h1{
+    background-color: rgb(37, 37, 37);
+    color: white;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+}
+
+.container{
+    background-color: rgb(249, 255, 199);
+    padding-bottom: 30px;
+    margin-top: 5px;
+}
+
+#showE, #showM{
+  height: 40px;
+  
+}
+
+img{
+    height: 20px;
+}
+
+#m, #e{
+    background-color: rgb(233, 233, 233);
+    margin-top: 30px;
+}
+
+#c1, #c2{
+    border: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+#showE, #showM{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding-bottom: 5px;
+   float: right;
+   border: none;
+}
+
+#imcResult, #imcResultE{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+#sistem{
+    font-size: 20px;
+}
+
+.row1{
+    background-color: rgb(37, 37, 37);
+}
+
+#rest1, #rest2{
+    background-color: rgb(252, 30, 30);
+    border: none;
+    border-radius: 20px;
+    padding: 6px;
+}
+
+#scale{
+background-color: white;
+width: 100%;
+margin-top: 20px;
+}
+
+#tableIcm{
+    background-color: rgb(196, 196, 196);
+}
+
+table {
+    border-collapse: collapse;
+  }
+
+#ins{
+background-color: rgb(255, 255, 128);
+font-weight: bold;
+}
+
+#nor{
+    background-color: rgb(74, 255, 119);
+    font-weight: bold;
+}
+
+#sob{
+    background-color: rgb(255, 98, 98);
+    font-weight: bold;
+}
+
+#ob{
+    background-color: red;
+    font-weight: bold;
+}

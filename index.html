@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" href="img/icono.png">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row row1">
+            <div class="col-md-12">
+                <h1>Calcule su indice de masa corporal (IMC)</h1>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-7">
+                <!--Tabla 1-->
+                <table id="m" class="table text-center">
+                    <thead>
+                        <tr>
+                            <th id="sistem">Sistema métrico <button id="showE"><img src="img/change.png"
+                                        alt=""></button>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Altura (m): <input id="h" type="number" placeholder="Ingrese su altura"></td>
+                        </tr>
+                        <tr>
+                            <td>Peso (kg): <input id="w" type="number" placeholder="Ingrese su peso"></td>
+                        </tr>
+                        <tr>
+                            <td><button id="c1" onclick="imcM()">Calcular</button>
+                                <div id="imcResult"></div>
+                                <div id="deleteBtn"></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!--Tabla 2-->
+                <table id="e" class="table text-center">
+                    <thead>
+                        <tr>
+                            <th id="sistem">Sistema inglés<button id="showM"><img src="img/change.png" alt=""></button>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Altura (in): <input id="p" type="number" placeholder="Ingrese su altura"></td>
+                        </tr>
+                        <tr>
+                            <td>Peso (lb): <input id="l" type="number" placeholder="Ingrese su peso"></td>
+                        </tr>
+                        <tr>
+                            <td><button id="c2" onclick="imcE()">Calcular</button>
+                                <div id="imcResultE"></div>
+                                <div id="deleteBtn2"></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!--Tabla valores-->
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-8">
+                <table class="text-center table" id="scale">
+                    <thead>
+                        <tr id="tableIcm">
+                            <th colspan="3">Calificación del IMC</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="ins">
+                            <td>Menor a 18.5</td>
+                            <td>Peso insuficiente.</td>
+                        </tr>
+                        <tr id="nor">
+                            <td>18.5 - 24.9</td>
+                            <td>Peso normal o saludable.</td>
+                        </tr>
+                        <tr id="sob">
+                            <td>25 - 29.9</td>
+                            <td>Sobrepeso.</td>
+                        </tr>
+                        <tr id="ob">
+                            <td>Mayor a 30</td>
+                            <td>Obesidad</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/index.js"></script>
+
+
+</body>
+
+</html>
