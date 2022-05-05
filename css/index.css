@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 #e {
     display: none;
 }
@@ -6,8 +12,8 @@ h1{
     background-color: rgb(37, 37, 37);
     color: white;
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-decoration: underline;
+    text-decoration: none;
+    padding: 10px
 }
 
 .container{
@@ -100,4 +106,28 @@ font-weight: bold;
 #ob{
     background-color: red;
     font-weight: bold;
+}
+
+.insSpan{
+    background-color: rgb(255, 255, 128);
+    padding: 10px;
+    border-radius: 10px
+}
+
+.norSpan{
+    background-color: rgb(74, 255, 119);
+    padding: 10px;
+    border-radius: 10px
+}
+
+.sobSpan{
+    background-color: rgb(255, 98, 98);
+    padding: 10px;
+    border-radius: 10px
+}
+
+.obSpan{
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px
 }

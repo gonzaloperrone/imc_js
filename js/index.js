@@ -16,7 +16,7 @@ btnTab2.onclick = function() {
 }
 
 //Calcular imc tabla 1 y alertas
-function imcM() {
+function imcM(imc) {
     var h = document.getElementById("h").value;
     var w = document.getElementById("w").value;
 
@@ -33,13 +33,13 @@ function imcM() {
     document.getElementById("imcResult").innerHTML = "Su IMC es: " + imc.toFixed(0) + "<br>";
 
     if (imc < 18.5) {
-        document.getElementById("imcResult").innerHTML += "Se encuentra dentro del rango de peso insuficiente."
+        document.getElementById("imcResult").innerHTML += '<span class="insSpan">Se encuentra dentro del rango de peso insuficiente.</span>'
     } else if (imc >= 18.5 && imc <= 24.9) {
-        document.getElementById("imcResult").innerHTML += "Se encuentra dentro del rango de peso normal o saludable."
+        document.getElementById("imcResult").innerHTML += '<span class="norSpan">Se encuentra dentro del rango de peso normal o saludable.</span>'
     } else if (imc >= 25 && imc <= 29.9) {
-        document.getElementById("imcResult").innerHTML += "Se encuentra dentro del rango de sobrepeso."
+        document.getElementById("imcResult").innerHTML += '<span class="sobSpan">Se encuentra dentro del rango de sobrepeso.</span>'
     } else if (imc >= 30) {
-        document.getElementById("imcResult").innerHTML += "Se encuentra dentro del rango de obesidad."
+        document.getElementById("imcResult").innerHTML += '<span class="obSpan">Se encuentra dentro del rango de obesidad.</span>'
     }
 
     document.getElementById("deleteBtn").innerHTML = '<button id="rest1" onclick="rest()">Restablecer</button>'
@@ -63,13 +63,13 @@ function imcE(){
     document.getElementById("imcResultE").innerHTML = "Su IMC es: " + imc2.toFixed(0) + "<br>";
 
     if (imc2 < 18.5) {
-        document.getElementById("imcResultE").innerHTML += "Se encuentra dentro del rango de peso insuficiente."
+        document.getElementById("imcResultE").innerHTML += '<span class="insSpan">Se encuentra dentro del rango de peso insuficiente.</span>'
     } else if (imc2 >= 18.5 && imc2 <= 24.9) {
-        document.getElementById("imcResultE").innerHTML += "Se encuentra dentro del rango de peso normal o saludable."
+        document.getElementById("imcResultE").innerHTML += '<span class="norSpan">Se encuentra dentro del rango de peso normal o saludable.</span>'
     } else if (imc2 >= 25 && imc2 <= 29.9) {
-        document.getElementById("imcResultE").innerHTML += "Se encuentra dentro del rango de sobrepeso."
+        document.getElementById("imcResultE").innerHTML += '<span class="sobSpan">Se encuentra dentro del rango de sobrepeso.</span>'
     } else if (imc2 >= 30) {
-        document.getElementById("imcResultE").innerHTML += "Se encuentra dentro del rango de obesidad."
+        document.getElementById("imcResultE").innerHTML += '<span class="obSpan">Se encuentra dentro del rango de obesidad.</span>'
     }
 
     document.getElementById("deleteBtn2").innerHTML = '<button id="rest1" onclick="rest()">Restablecer</button>'
